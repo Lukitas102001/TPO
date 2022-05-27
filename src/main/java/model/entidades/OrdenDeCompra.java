@@ -20,6 +20,9 @@ public class OrdenDeCompra {
     }
 
     public DatosIvaDTO getDatosIVA() {
-        return new DatosIvaDTO();
+        DatosIvaDTO datos = new DatosIvaDTO(); 
+        String cuitProveedor =  proveedor.getCuitEmpresa();
+        datos.setCuitProveedor(cuitProveedor);
+        return datos;
     }
 }
