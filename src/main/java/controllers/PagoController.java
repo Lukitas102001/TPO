@@ -1,7 +1,5 @@
 package controllers;
 
-import model.entidades.Pago;
-
 public class PagoController {
 
     private static PagoController controller;
