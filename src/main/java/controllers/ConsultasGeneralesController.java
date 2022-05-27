@@ -1,7 +1,18 @@
+package controllers;
+
+import model.entidades.Proveedor;
+
+import java.util.ArrayList;
+
 public class ConsultasGeneralesController {
 
     private ConsultasGeneralesController controller;
-    private ConsultasGeneralesController() {}
+
+    private ArrayList<Proveedor> proveedores;
+
+    private ConsultasGeneralesController() {
+        proveedores = new ArrayList<>();
+    }
 
     public ConsultasGeneralesController obtenerInstancia() {
         if(controller == null)
